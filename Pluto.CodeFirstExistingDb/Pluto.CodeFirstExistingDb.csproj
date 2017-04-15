@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C71D53B5-DD9E-4169-A1A2-FE2401EE8935}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Pluto.CodeFirstExistingDb</RootNamespace>
+    <AssemblyName>Pluto.CodeFirstExistingDb</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Author.cs" />
+    <Compile Include="Course.cs" />
+    <Compile Include="Migrations\201704090120417_InitialModel.cs" />
+    <Compile Include="Migrations\201704090120417_InitialModel.Designer.cs">
+      <DependentUpon>201704090120417_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704090127036_AddCategoriesTable.cs" />
+    <Compile Include="Migrations\201704090127036_AddCategoriesTable.Designer.cs">
+      <DependentUpon>201704090127036_AddCategoriesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704090131148_AddCategoryColumnToCoursesTable.cs" />
+    <Compile Include="Migrations\201704090131148_AddCategoryColumnToCoursesTable.Designer.cs">
+      <DependentUpon>201704090131148_AddCategoryColumnToCoursesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704090135182_AddDatePublishedToCoursesTable.cs" />
+    <Compile Include="Migrations\201704090135182_AddDatePublishedToCoursesTable.Designer.cs">
+      <DependentUpon>201704090135182_AddDatePublishedToCoursesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704090137313_RenameTitleToNameInCoursesTable.cs" />
+    <Compile Include="Migrations\201704090137313_RenameTitleToNameInCoursesTable.Designer.cs">
+      <DependentUpon>201704090137313_RenameTitleToNameInCoursesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704090142511_DeleteDatePublishedColumnFromCoursesTable.cs" />
+    <Compile Include="Migrations\201704090142511_DeleteDatePublishedColumnFromCoursesTable.Designer.cs">
+      <DependentUpon>201704090142511_DeleteDatePublishedColumnFromCoursesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704090144098_DeleteCategoryColumnFromCoursesTable.cs" />
+    <Compile Include="Migrations\201704090144098_DeleteCategoryColumnFromCoursesTable.Designer.cs">
+      <DependentUpon>201704090144098_DeleteCategoryColumnFromCoursesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704090145342_DeleteCategoriesTable.cs" />
+    <Compile Include="Migrations\201704090145342_DeleteCategoriesTable.Designer.cs">
+      <DependentUpon>201704090145342_DeleteCategoriesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704090222422_PopulateCategoriesTable.cs" />
+    <Compile Include="Migrations\201704090222422_PopulateCategoriesTable.Designer.cs">
+      <DependentUpon>201704090222422_PopulateCategoriesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704090338588_foo.cs" />
+    <Compile Include="Migrations\201704090338588_foo.Designer.cs">
+      <DependentUpon>201704090338588_foo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="PlutoContext.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tag.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201704090120417_InitialModel.resx">
+      <DependentUpon>201704090120417_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704090127036_AddCategoriesTable.resx">
+      <DependentUpon>201704090127036_AddCategoriesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704090131148_AddCategoryColumnToCoursesTable.resx">
+      <DependentUpon>201704090131148_AddCategoryColumnToCoursesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704090135182_AddDatePublishedToCoursesTable.resx">
+      <DependentUpon>201704090135182_AddDatePublishedToCoursesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704090137313_RenameTitleToNameInCoursesTable.resx">
+      <DependentUpon>201704090137313_RenameTitleToNameInCoursesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704090142511_DeleteDatePublishedColumnFromCoursesTable.resx">
+      <DependentUpon>201704090142511_DeleteDatePublishedColumnFromCoursesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704090144098_DeleteCategoryColumnFromCoursesTable.resx">
+      <DependentUpon>201704090144098_DeleteCategoryColumnFromCoursesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704090145342_DeleteCategoriesTable.resx">
+      <DependentUpon>201704090145342_DeleteCategoriesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704090222422_PopulateCategoriesTable.resx">
+      <DependentUpon>201704090222422_PopulateCategoriesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704090338588_foo.resx">
+      <DependentUpon>201704090338588_foo.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

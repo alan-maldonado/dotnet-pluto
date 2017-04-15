@@ -1,9 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pluto.DbFirst", "Pluto.DbFirst\Pluto.DbFirst.csproj", "{1CBE9684-4DC2-45D0-8790-F4DDBFF428BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pluto.CodeFirst", "Pluto.CodeFirst\Pluto.CodeFirst.csproj", "{0A1549DB-1935-43A7-BAE8-B89A139E841A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pluto.CodeFirstExistingDb", "Pluto.CodeFirstExistingDb\Pluto.CodeFirstExistingDb.csproj", "{C71D53B5-DD9E-4169-A1A2-FE2401EE8935}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pluto.DataAnnotations", "Pluto.DataAnnotations\Pluto.DataAnnotations.csproj", "{93297F0A-6BCF-484F-97BC-727189D0D733}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pluto.FluentAPI", "Pluto.FluentAPI\Pluto.FluentAPI.csproj", "{F553CF44-2081-4393-86A8-940C5A3F30D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pluto.Queries", "Pluto.Queries\Pluto.Queries.csproj", "{D1776DED-C59A-4F8A-8C31-96EAE15BDF5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,26 @@ Global
 		{1CBE9684-4DC2-45D0-8790-F4DDBFF428BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CBE9684-4DC2-45D0-8790-F4DDBFF428BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CBE9684-4DC2-45D0-8790-F4DDBFF428BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A1549DB-1935-43A7-BAE8-B89A139E841A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A1549DB-1935-43A7-BAE8-B89A139E841A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A1549DB-1935-43A7-BAE8-B89A139E841A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A1549DB-1935-43A7-BAE8-B89A139E841A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C71D53B5-DD9E-4169-A1A2-FE2401EE8935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C71D53B5-DD9E-4169-A1A2-FE2401EE8935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C71D53B5-DD9E-4169-A1A2-FE2401EE8935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C71D53B5-DD9E-4169-A1A2-FE2401EE8935}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93297F0A-6BCF-484F-97BC-727189D0D733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93297F0A-6BCF-484F-97BC-727189D0D733}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93297F0A-6BCF-484F-97BC-727189D0D733}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93297F0A-6BCF-484F-97BC-727189D0D733}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F553CF44-2081-4393-86A8-940C5A3F30D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F553CF44-2081-4393-86A8-940C5A3F30D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F553CF44-2081-4393-86A8-940C5A3F30D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F553CF44-2081-4393-86A8-940C5A3F30D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1776DED-C59A-4F8A-8C31-96EAE15BDF5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1776DED-C59A-4F8A-8C31-96EAE15BDF5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1776DED-C59A-4F8A-8C31-96EAE15BDF5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1776DED-C59A-4F8A-8C31-96EAE15BDF5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
